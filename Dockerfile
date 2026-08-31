@@ -53,6 +53,7 @@ RUN \
     done
 
 COPY --chown=node:node . .
+COPY --chown=node:node librechat.yaml /app/librechat.yaml
 
 RUN \
     # React client build with configurable memory
