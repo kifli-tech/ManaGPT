@@ -76,9 +76,8 @@ ENV BUILD_DATE=${BUILD_DATE}
 # Node API setup
 EXPOSE 3080
 ENV HOST=0.0.0.0
-USER root
 
-CMD ["sh", "-c", "mkdir -p /app/uploads/temp && chown -R node:node /app/uploads && chmod -R 775 /app/uploads && su -p node -c 'npm run backend'"]
+CMD ["npm", "run", "backend"]
 
 # Optional: for client with nginx routing
 # FROM nginx:stable-alpine AS nginx-client
