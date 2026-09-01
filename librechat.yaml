@@ -18,6 +18,7 @@ transactions:
 registration:
   allowedDomains:
     - "kifli.tech"
+    - "ineedmana.io" 
 
 interface:
   customWelcome: "Üdvözöl a ManaGPT! Miben segíthetek ma?"
