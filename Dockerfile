@@ -77,12 +77,6 @@ ENV BUILD_DATE=${BUILD_DATE}
 EXPOSE 3080
 ENV HOST=0.0.0.0
 
-USER root
-
-RUN mkdir -p /app/uploads/temp && chown -R node:node /app/uploads && chmod -R 775 /app/uploads
-
-USER node
-
 CMD ["npm", "run", "backend"]
 
 # Optional: for client with nginx routing
